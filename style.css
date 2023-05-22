@@ -379,7 +379,7 @@
   }
   .project .carousel .card:hover {
     background: #118ab2;
-    color: #000;
+    color: #ffffff;
     /* change */
   }
   .project .carousel .card .box {
@@ -395,9 +395,12 @@
   .project .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
+    color: rgb(255, 255, 255);
     margin: 10px 0 7px 0;
   }
-  
+  .project .carousel .card .textD{
+    color: rgb(255, 255, 255);
+  }
   .repo-links {
     display: flex;
     justify-content: space-between;
