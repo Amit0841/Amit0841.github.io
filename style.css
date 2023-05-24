@@ -132,10 +132,10 @@
     
   }
   #nav-menu.sticky .menu li a:hover {
-    color: #fff;
+    color: #abb9de;
   }
   #nav-menu.sticky .menu li a{
-    color: #000;
+    color: #ffffff;
     
   }
   /* menu btn styling */
@@ -176,7 +176,7 @@
   /* home section styling */
   #home {
     display: flex;
-    background: url("./ewan-robertson-fDsCIIGdw9g-unsplash.jpg") no-repeat center;
+    background: url("./image/ewan-robertson-fDsCIIGdw9g-unsplash.jpg") no-repeat center;
     background-color: #111;
     height: 100vh;
     color: #fff;
@@ -592,9 +592,16 @@
   footer span a:hover {
     text-decoration: underline;
   }
-  
+  #github-statics img{
+    width: 35%;
+        }
+  /*git*/
+ 
   /* responsive media query start */
   @media (max-width: 1104px) {
+    #github-statics img{
+      width: 650px;
+          }
     #about .about-content .left img {
       height: 350px;
       width: 350px;
@@ -672,6 +679,9 @@
   }
   
   @media (max-width: 690px) {
+    #github-statics img{
+      width: 450px;
+          }
     .max-width {
       padding: 0 23px;
     }
@@ -690,6 +700,9 @@
   }
   
   @media (max-width: 500px) {
+    #github-statics img{
+width: 350px;
+    }
     #home .home-content .text-2 {
       font-size: 50px;
     }
