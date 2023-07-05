@@ -1,56 +1,73 @@
-
-let body = document.querySelector('body');
-
-let sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-    sidemenu.style.right = "0";
-}
-function closemenu() {
-    sidemenu.style.right = "-200px";
-}
-
-//typing text animation script
-var typed = new Typed(".typing", {
-    strings: ["A Full Stack Developer",  "A Java Backend Developer"],
-    typeSpeed: 80,
-    backSpeed: 60,
-    loop: true,
-})
-
-
-document.querySelector('#resume-link-1').addEventListener("click", () => {
-    // console.log("OPENinig.....")
-    window.location.assign("https://drive.google.com/file/d/1sNtc9piW1WoSwI0toZvcWi4_s6--903X/view?usp=share_link", "_blank");
-})
-
-document.querySelector('#resume-link-2').addEventListener("click", () => {
-    // console.log("OPENinig.....")
-    window.location.assign("https://drive.google.com/file/d/1sNtc9piW1WoSwI0toZvcWi4_s6--903X/view?usp=share_link", "_blank");
-})
-
-const sr = ScrollReveal({
-    origin: 'left',
-    distance: '120px',
-    duration: 2000,
-    reset: true
-})
-
-sr.reveal('#about h1', { delay: 200})
-sr.reveal('.home-img', { delay: 600 })
-sr.reveal('#user-detail-intro', { delay: 600 })
-sr.reveal('.skill', { delay: 200 })
-
-sr.reveal('.project', {})
-sr.reveal('.project-card img', { delay: 100 })
-sr.reveal('.project-title', { delay: 200 })
-sr.reveal('.project-description', { delay: 200 })
-sr.reveal('.project-tech-stack', { delay: 200 })
-sr.reveal('.repo-links', { delay: 200 })
-
-sr.reveal('#github-streak-stats', { delay: 200 })
-sr.reveal('#github-top-langs', { delay: 400 })
-sr.reveal('#github-stats-card', { delay: 600 })
-
- sr.reveal('.calendar', { delay: 600 })
-
+$(document).ready(function () {
+    $(window).scroll(function () {
+      // sticky navbar on scroll script
+      if (this.scrollY > 20) {
+        $("#nav-menu").addClass("sticky");
+      } else {
+        $("#nav-menu").removeClass("sticky");
+      }
+  
+      // scroll-up button show/hide script
+      if (this.scrollY > 500) {
+        $(".scroll-up-btn").addClass("show");
+      } else {
+        $(".scroll-up-btn").removeClass("show");
+      }
+    });
+  
+    // slide-up script
+    $(".scroll-up-btn").click(function () {
+      $("html").animate({ scrollTop: 0 });
+      // removing smooth scroll on slide-up button click
+      $("html").css("scrollBehavior", "auto");
+    });
+  
+    $("#nav-menu .menu li a").click(function () {
+      // applying again smooth scroll on menu items click
+      $("html").css("scrollBehavior", "smooth");
+    });
+  
+    // toggle menu/navbar script
+    $(".nav-link").click(function () {
+      $("#nav-menu .menu").toggleClass("active");
+      $(".nav-link i").toggleClass("active");
+    });
+  
+    // typing text animation script
+    // var typed = new Typed(".typing", {
+    //   strings: ["Java Developer", "Coder", "Problem Solver"],
+    //   typeSpeed: 100,
+    //   backSpeed: 60,
+    //   loop: true,
+    // });
+  
+    var typed = new Typed(".typing-2", {
+      strings: ["Java Developer", "Coder", "Problem Solver"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    });
+  
+    // owl carousel script
+    $(".carousel").owlCarousel({
+      margin: 20,
+    loop: false,
+      autoplay: false,   //for carousel effect turn it true
+      autoplayTimeOut: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: false,
+        },
+      },
+    });
+  });
