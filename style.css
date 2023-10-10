@@ -366,6 +366,11 @@
   .skills-content .right .mysql::before {
     width: 70%;
   }
+  .carousel{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  }
   
 
   .project .carousel .card {
@@ -381,6 +386,7 @@
     color: #ffffff;
     /* change */
   }
+ 
   .project .carousel .card .box {
     display: flex;
     flex-direction: column;
@@ -705,6 +711,12 @@
   }
   
   @media (max-width: 500px) {
+    .carousel{
+      justify-content: center; 
+  align-items: center;
+    grid-template-columns: repeat(1, 0.8fr);
+    gap: 30px;
+    }
     .skills-content {
       margin-left: 0px;
     }
