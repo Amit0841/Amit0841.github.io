@@ -72,10 +72,10 @@ $(document).ready(function () {
     // });
   });
   document.getElementById("resume-button-1").addEventListener("click", function() {
-    var pdfUrl = "https://drive.google.com/file/d/1OMZLxgfJOqTU1Nc9kseNOKt1dqNRFuMF/view?usp=sharing";
+    var pdfUrl = "https://drive.google.com/file/d/1wtEkyTU3MyetfqXDgEn5KY87CFJEN_A6/view?usp=sharing";
     window.open(pdfUrl, "_blank");
 });
 document.getElementById("resume-button-2").addEventListener("click", function() {
-  var pdfUrl = "https://drive.google.com/file/d/1OMZLxgfJOqTU1Nc9kseNOKt1dqNRFuMF/view?usp=sharing";
+  var pdfUrl = "https://drive.google.com/file/d/1wtEkyTU3MyetfqXDgEn5KY87CFJEN_A6/view?usp=sharing";
   window.open(pdfUrl, "_blank");
 });
