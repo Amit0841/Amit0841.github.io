@@ -102,6 +102,7 @@
     justify-content: space-between;
     
   }
+ 
   #nav-menu .logo a {
     color: #fff;
     font-size: 35px;
@@ -368,8 +369,8 @@
   }
   .carousel{
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   }
   
 
@@ -417,7 +418,8 @@
   
   .repo-div {
     display: flex;
-    width: 35%;
+    width: 30%;
+    height: 90%;
     border: 1px solid white;
     justify-content: center;
     align-items: center;
@@ -425,7 +427,8 @@
   
   .demo-div {
     display: flex;
-    width: 35%;
+    width: 30%;
+    height: 90%;
     border: 1px solid white;
     justify-content: center;
     align-items: center;
@@ -444,8 +447,8 @@
   }
   
   .project .carousel .card img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     border-radius: 5%;
     border: 5px solid #118ab2;
@@ -619,6 +622,12 @@
     }
   }
   @media (max-width: 947px) {
+    .carousel{
+      justify-content: center; 
+  align-items: center;
+    grid-template-columns: repeat(2, 0.8fr);
+    gap: 30px;
+    }
     .skills-content {
       margin-left: 150px;
     }
