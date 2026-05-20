@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Hibernate JPA</title>
+  <desc id="desc">Hibernate and JPA persistence skill icon</desc>
+  <rect width="256" height="256" rx="36" fill="#f4f1e8"/>
+  <path fill="#59666c" d="M50 60h52l104 136h-52L50 60z"/>
+  <path fill="#bcae79" d="M154 60h52L102 196H50L154 60z"/>
+  <path fill="#fff" d="M82 95h28l64 83h-28L82 95z" opacity=".75"/>
+  <text x="128" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#384247">JPA</text>
+</svg>

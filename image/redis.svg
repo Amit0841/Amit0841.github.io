@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Redis</title>
+  <desc id="desc">Redis database logo mark</desc>
+  <rect width="256" height="256" rx="38" fill="#fff"/>
+  <path fill="#a41e11" d="M217 165v24c0 10-40 35-89 35s-89-25-89-35v-24c0 10 40 35 89 35s89-25 89-35z"/>
+  <path fill="#d82c20" d="M217 131v24c0 10-40 35-89 35s-89-25-89-35v-24c0 10 40 35 89 35s89-25 89-35z"/>
+  <path fill="#ed3b2f" d="M217 97v24c0 10-40 35-89 35s-89-25-89-35V97c0 10 40 35 89 35s89-25 89-35z"/>
+  <path fill="#ff4438" d="M128 32c49 0 89 25 89 35s-40 35-89 35-89-25-89-35 40-35 89-35z"/>
+  <path fill="#79160d" d="M92 63l24-9 22 8 25-10 27 11-62 24-62-24 26-10z"/>
+  <path fill="#fff" d="M116 56l17 6-17 6-17-6 17-6zm47 5l17 7-18 7-17-7 18-7zm-71 0l17 7-18 7-17-7 18-7z"/>
+  <path fill="#621108" d="M128 87l62-24v11l-62 24-62-24V63l62 24z"/>
+</svg>

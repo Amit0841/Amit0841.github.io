@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Monolithic Architecture</title>
+  <desc id="desc">Monolithic application architecture skill icon</desc>
+  <rect width="256" height="256" rx="36" fill="#eef4ff"/>
+  <rect x="52" y="58" width="152" height="118" rx="18" fill="#1f4f8f"/>
+  <rect x="74" y="82" width="108" height="22" rx="6" fill="#dbeafe"/>
+  <rect x="74" y="118" width="48" height="36" rx="8" fill="#93c5fd"/>
+  <rect x="134" y="118" width="48" height="36" rx="8" fill="#bfdbfe"/>
+  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="8" d="M128 104v14m-30 0h60"/>
+  <rect x="68" y="176" width="120" height="18" rx="9" fill="#173b6c"/>
+  <text x="128" y="224" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#173b6c">Monolithic</text>
+</svg>

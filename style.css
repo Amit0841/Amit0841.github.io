@@ -278,19 +278,55 @@
   }
   
   /* skills section styling */
+  .skills-content {
+    justify-content: center;
+  }
+  #skills .skills-content {
+    flex-direction: column;
+  }
+  .skills-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 34px;
+    align-items: start;
+    justify-items: center;
+  }
+  .skills-images {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
   .skills-images img {
-    height: 150px;
-    width: 150px;
-    /* object-fit: cover; */
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
     border-radius: 5%;
-    /* border: 5px solid crimson; */
     transition: all 0.3s ease;
-  
   }
   .skills-images img:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 110%;
-
+    transform: translateY(-6px) scale(1.05);
+  }
+  .skills-images span {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .skills-subtitle {
+    width: 100%;
+    margin: 34px 0 18px;
+    color: #118ab2;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ai-tools-grid {
+    max-width: 420px;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 
 
@@ -479,12 +515,6 @@
   .owl-dot:hover {
     background: #118ab2 !important;
   }
-  .skills-images {
-    width: 120px;
-    height: 120px;
-    margin-bottom:30px;
-  }
-  
 
   #contact .contact-content .column {
     width: calc(50% - 30px);
@@ -629,7 +659,10 @@
     gap: 30px;
     }
     .skills-content {
-      margin-left: 150px;
+      margin-left: 0;
+    }
+    .skills-grid {
+      grid-template-columns: repeat(3, minmax(120px, 1fr));
     }
     .nav-link {
       display: block;
@@ -697,7 +730,11 @@
   
   @media (max-width: 690px) {
     .skills-content {
-      margin-left: 90px;
+      margin-left: 0;
+    }
+    .skills-grid {
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+      gap: 24px;
     }
     #github-statics img{
       width: 450px;
@@ -728,6 +765,9 @@
     }
     .skills-content {
       margin-left: 0px;
+    }
+    .skills-grid {
+      grid-template-columns: 1fr;
     }
     #github-statics img{
 width: 350px;
